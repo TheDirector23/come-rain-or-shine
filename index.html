@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Come Rain or Shine</title>
+    
+        <style>
+    
+            body{
+                background-image: url("https://images.unsplash.com/photo-1498707406720-1094aef934da?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2091&q=80");
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+    
+            #header{
+                font-family: sans-serif;
+                color: white;
+                
+                width: 500px;
+                background-color: rgb(255, 142, 77);
+                border-radius: 12px;
+                border: none;
+                padding: 15px 32px;
+                text-decoration: none;
+                display: inline-block;
+            }
+
+            #weather-result{
+                color: rgb(0, 18, 119);
+                font-family: sans-serif;
+                text-align: left;
+                font-size: 15pt;
+
+                width: 400px;
+                background-color:rgb(195, 206, 226);
+                border-radius: 12px;
+                border: none;
+                padding: 15px 42px;
+                text-decoration: none;
+                display: inline-block;
+                position: center;
+            }
+
+            #recommendations-result{
+                color: rgb(0, 18, 119);
+                font-family: sans-serif;
+                text-align: left;
+                font-size: 15pt;
+
+                width: 400px;
+                background-color:rgb(195, 206, 226);
+                border-radius: 12px;
+                border: none;
+                padding: 15px 42px;
+                text-decoration: none;
+                display: inline-block;
+                position: center;
+            }
+
+            #submit-button-style{
+                background-color:rgb(255, 142, 77);
+                border-radius: 12px;
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 20px;
+                font-family: sans-serif;
+            }
+
+            #zipcode-input{
+                border-radius: 12px;
+                border: none;
+                width: 100pt;
+                height: 30pt;
+                font-family: sans-serif;
+                font-size: 11pt;
+                text-align: center;
+            }
+    
+        </style>
+    
+    </head>
+
+<body></body>
+
+<center>
+
+<br>
+
+<div>
+
+    <div id="originalText">
+
+    <div id="header">
+
+        <h1 font-size="30pt">Come Rain or Shine</h1>
+
+        <h2 font-size="25pt">What should you do tomorrow?</h2>
+
+    </div>
+
+    </div>
+
+    <br><br>
+
+    <div id="container">
+
+        <div id="hidden-weather" type="hidden"></div>
+        
+        <form id="zipcode-form" onsubmit="handle(event)">
+
+            <input type="text" name="zipcode" id="zipcode-input" accept="5" placeholder="Enter zipcode">
+            <input size="100" type="submit" value="Get recommendations!" id="submit-button-style"></input>
+
+        </form>
+
+        <br>
+        <br>
+        <br>
+
+        <div id="weather-result">
+
+            <center><h3>Weather Forecast for Tomorrow:</h3></center>
+
+        </div>
+
+        <br>
+        <br>
+
+        <div id="recommendations-result">
+        
+            <center><h3>Recommendations:</h3></center>
+
+        </div>
+    
+    </div>
+
+</div>
+
+<br>
+
+</center>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+        <script src="weather.js" type="text/javascript"></script>
+    
+</body>
+</html>
