@@ -23,7 +23,7 @@ var output;
 
 // Rain
 if(weatherForecastForTommorowNoon.pop >= .01){
-  output = "It's probably going to rain tomorrow. You should do something indoors, like: <li>Read a book</li> <li>Watch a movie/tv series</li> <li>Go bowling</li> <li>Eat out</li> <li>Go shopping</li> <li>Rock climbing</li> <li>Visit a museum</li> <li>Visit a friend/family</li> <li>Help an elderly acquaintence</li> <li>Do arts and crafts</li>";
+  output = "It's probably going to rain tomorrow. Indoor activities are probably best – you could: <li>Read a book</li> <li>Watch a movie/tv series</li> <li>Go bowling</li> <li>Eat out</li> <li>Go shopping</li> <li>Rock climbing</li> <li>Visit a museum</li> <li>Visit a friend/family</li> <li>Help an elderly acquaintence</li> <li>Do arts and crafts</li>";
 }
 
 // Snow
@@ -42,29 +42,29 @@ if ((weatherForecastForTommorowNoon.main.temp >= 60 && weatherForecastForTommoro
 }
 
 if (weatherForecastForTommorowNoon.wind.speed >= 21){
-  output = "It's a little too windy tomorrow for outdoor activities! You should: <li>Curl up with your favorite book or movie</li> <li>Bake warm brownies or congo bars</li> <li>Write your own book</li> <li>Find a competition to enter</li> <li>Go shopping</li> <li>Do arts and crafts</li> <li>Make indoor s'mores</li> <li>Take a nap</li> <li>Learn to juggle</li> <li>Or you could get work done...</li>";
+  output = "It's a little too windy tomorrow for outdoor activities! You should: <li>Write your own book/short story</li> <li>Curl up with your favorite book or movie</li> <li>Bake warm brownies and/or congo bars</li> <li>Find a competition to enter</li> <li>Go shopping</li> <li>Do arts and crafts</li> <li>Make indoor s'mores or s'more's dip (it's delicious!)</li> <li>Take a nap</li> <li>Learn to juggle</li> <li>Or you could get work done...</li>";
 }
 
 // Too humid
 if (weatherForecastForTommorowNoon.humidity >= 80){
-  output = "Tomorrow's a little too hot or humid for most outdoor activities! Maybe you should: <li>Go swimming at the pool</li> <li>Bake some sweets</li> <li>Make/buy refreshing lemonade</li> <li>Plan a party</li> <li>Play some games</li> <li>Write letters to a friend</li> <li>Help an elderly acquaintence</li> <li>Visit family or friends</li> <li>Bake cookies for your neighbors</li> <li>Sing songs or play an instrument or both!</li>";
+  output = "Tomorrow's a little too hot or humid for most outdoor activities! Maybe you should: <li>Go swimming at a pool</li> <li>Bake some desserts</li> <li>Make/buy refreshing lemonade</li> <li>Plan a party</li> <li>Play some games</li> <li>Write letters to a friend</li> <li>Help an elderly acquaintence</li> <li>Visit family or friends</li> <li>Bake cookies for your neighbors</li> <li>Sing songs or play an instrument or do both!</li>";
 }
 
 // Constant condition
 if (weatherForecastForTommorowNoon.main.temp <= 30){
-  output = "Tomorrow's a bit too cold for outdoor activities! Maybe you should: <li>Curl up with your favorite book or movie</li> <li>Bake warm brownies or congo bars</li> <li>Make/buy coffee or hot chocolate</li> <li>Create a tv show!</li> <li>Go shopping</li> <li>Do arts and crafts</li> <li>Make s'mores</li> <li>Spend the day in a cozy cafe</li> <li>Learn to juggle</li> <li>Make cutout snowflakes</li>";
+  output = "Tomorrow's a bit too cold for outdoor activities! Maybe you should: <li>Curl up with your favorite book or movie</li> <li>Bake warm brownies and/or congo bars</li> <li>Make/buy coffee or hot chocolate</li> <li>Go shopping</li> <li>Do arts and crafts</li> <li>Make s'mores</li> <li>Spend the day in a cozy cafe</li> <li>Learn to juggle</li> <li>Make cutout snowflakes</li> <li>Create a tv show!</li>";
 }
 
 if((weatherForecastForTommorowNoon.main.temp >= 31 && weatherForecastForTommorowNoon.main.feels_like <= 60) && weatherForecastForTommorowNoon.pop == 0){
-  output = "It's going to be a little chilly tomorrow. You could: <li>Take a walk</li> <li>Throw a baseball with friends/family</li> <li>Have a firepit outside and roast marshmallows</li> <li>Go downtown</li> <li>Go shopping</li> <li>Paint a picture or sketch</li> <li>Do a fun science experiment</li> <li>Make pizza</li> <li>Make decorations for the current season</li> <li>Felt your favorite animal (No clue what felting is? Google it!)</li>";
+  output = "It's going to be a little chilly tomorrow. You could: <li>Take a walk</li> <li>Throw a baseball with friends/family</li> <li>Roast marshmallows over a firepit</li> <li>Go downtown</li> <li>See a movie in the theaters</li> <li>Paint a picture or sketch</li> <li>Conduct a fun science experiment</li> <li>Bake pizza</li> <li>Create decorations for the current season</li> <li>Felt your favorite animal (No clue what felting is? Google it!)</li>";
 }
 
 if((weatherForecastForTommorowNoon.main.temp >= 61 && weatherForecastForTommorowNoon.main.feels_like <= 79) && (weatherForecastForTommorowNoon.pop == 0)){
-  output = "It's going to be pretty nice tomorrow! You could: <li>Go jogging</li> <li>Take a bike ride</li> <li>Host an outdoor party</li> <li>Go downtown</li> <li>Do a photoshoot</li> <li>Read a book outside</li> <li>Visit a friend or family</li> <li>See if any fun events are happening near you!</li> <li>Film a movie</li> <li>Just relax...</li>";
+  output = "It's going to be pretty nice tomorrow! You could: <li>Go for a jog</li> <li>Take a bike ride</li> <li>Host an outdoor party</li> <li>Go downtown and walk around</li> <li>Do a photoshoot</li> <li>Read a book outside</li> <li>Visit a friend or family</li> <li>Film a movie</li> <li>See if any fun events are happening near you!</li> <li>Just relax...</li>";
 }
 
 if (weatherForecastForTommorowNoon.main.temp >= 80){
-  output = "Tomorrow's a little too hot or humid for most outdoor activities! Maybe you should: <li>Go swimming at the pool</li> <li>Bake some sweets</li> <li>Make/buy refreshing lemonade</li> <li>Plan a party</li> <li>Play some games</li> <li>Write letters to a friend</li> <li>Help an elderly acquaintence</li> <li>Visit family or friends</li> <li>Bake cookies for your neighbors</li> <li>Sing songs or play an instrument or both!</li>";
+  output = "Tomorrow's a little too hot or humid for most outdoor activities! Maybe you should: <li>Swim at a pool</li> <li>Bake some sweets</li> <li>Make/buy refreshing lemonade</li> <li>Plan a party</li> <li>Play some games</li> <li>Write letters to a friend</li> <li>Help an elderly acquaintence</li> <li>Visit family or friends</li> <li>Bake cookies for your neighbors</li> <li>Sing songs or play an instrument or do both!</li>";
 }
 
   var weatherRegular = `
