@@ -1,4 +1,4 @@
-console.log("Hello there!");
+console.log("Hello!");
 
 async function handle(event) {
   event.preventDefault();
